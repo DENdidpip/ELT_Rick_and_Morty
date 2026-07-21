@@ -41,3 +41,5 @@ profiles.yml
 
 .user.yml
 **/.user.yml
+
+rick_and_morty/.gitignore
