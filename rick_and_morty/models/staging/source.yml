@@ -1,0 +1,6 @@
+source:
+  - name: raw_char
+    database: raw
+    schema: character
+    tables:
+      - name: char

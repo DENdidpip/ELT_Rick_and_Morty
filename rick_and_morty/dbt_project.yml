@@ -23,4 +23,6 @@ clean-targets:
 
 models:
   rick_and_morty:
-    +materialized: view
+    staging:
+      +materialized: table
+      +schema: STAGING
