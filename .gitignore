@@ -9,7 +9,6 @@ env/
 __pycache__/
 *.py[cod]
 
-# Logs
 logs/
 *.log
 
@@ -43,3 +42,5 @@ profiles.yml
 **/.user.yml
 
 rick_and_morty/.gitignore
+
+draft

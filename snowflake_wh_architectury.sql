@@ -61,3 +61,7 @@ create table if not exists raw.episode.ep(
     load_ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
     raw_data VARIANT
 );
+
+create warehouse dwh;
+create schema dwh.staging;
+create schema dwh.marts;
