@@ -2,7 +2,7 @@
     materialized='table'
 ) }}
 
-select
+select distinct
     raw_data:id::int as character_id,
     raw_data:name::string as name,
     raw_data:status::string as status,
@@ -16,4 +16,5 @@ select
     raw_data:origin.url::string as origin_url,
     raw_data:location.name::string as location_name,
     raw_data:location.url::string as location_url
-from RAW.CHARACTER.char
+from RAW.CHARACTER.char where raw_data:id::int is not null
+order by raw_data:id::int
