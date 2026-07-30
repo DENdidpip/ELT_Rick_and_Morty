@@ -50,7 +50,7 @@ def load_to_snowflake(config):
 
 
     for record in data:
-
+        print(record)
         cursor.execute(
             insert_query,
             (json.dumps(record),)

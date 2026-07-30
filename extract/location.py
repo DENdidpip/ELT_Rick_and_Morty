@@ -2,7 +2,7 @@ import requests
 
 def location_extract():
     collect = []
-    for i in range(1, 200):
+    for i in range(1, 400):
         try:
             url = f"https://rickandmortyapi.com/api/location/{i}"
             response = requests.get(url)

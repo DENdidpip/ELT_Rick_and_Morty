@@ -20,9 +20,13 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-
 models:
   rick_and_morty:
+
     staging:
       +materialized: table
-      +schema: STAGING
+      +schema: CHARACTER_STAGING
+
+    marts:
+      +materialized: table
+      +schema: MART

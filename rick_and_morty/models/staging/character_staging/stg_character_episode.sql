@@ -3,11 +3,7 @@
 ) }}
 select distinct
     raw_data:id::int as character_id,
-    split_part(
-        episode.value::string,
-        '/',
-        6
-    )::int as episode_id
+    {{ extract_id("episode.value::string") }} as episode_id
 
 
 from RAW.CHARACTER.char,
